@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "diconfig"
+version = "0.0.2"
+description = "一个简单的配置管理工具(A simple dictionary configuration management tool),dict <-> config file [json, toml, yaml, ini, xml]"
+authors = ["zisul <zisull@qq.com>"]
+readme = "README.md"
+packages = [{ include = "diconfig" }]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+orjson = "^3.10.11"
+toml = "^0.10.2"
+pyyaml = "^6.0.2"
+configparser = "^7.1.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
